@@ -12,7 +12,10 @@ const connectDB = async () => {
     console.error("1. Your MongoDB Atlas connection string is correct");
     console.error("2. Your IP address is whitelisted in MongoDB Atlas");
     console.error("3. Your network connection is stable");
-    process.exit(1);
+    // Don't exit the process here; allow the server to start so the dev
+    // environment can still serve API responses that don't require DB.
+    // Let the caller decide how to handle the failure.
+    throw error;
   }
 };
 
