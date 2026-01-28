@@ -1,0 +1,339 @@
+[
+  {
+    "subject": "Software Engineering",
+    "questionText": "Assume you are requested to model the library management system of the classes, and there is the relationship that a library contains students and books. From these classes which of the following relationship is not true?",
+    "options": [
+      "A. The relationship between library and books is aggregation",
+      "B. The relationship between library and student is aggregation",
+      "C. The relationship between library and books is composition.",
+      "D. The relationship between books and student is association"
+    ],
+    "correctAnswer": "B. The relationship between library and student is aggregation",
+    "explanation": "Library contains students, but students exist independently of the library (they can enroll/drop), making it association, not aggregation. Books may be owned by library (composition/aggregation depending on ownership).",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Consider a file system with a graphical user interface... Based on the above scenario which of the following is true?",
+    "options": [
+      "A. File, Folder, and pointer are boundary objects",
+      "B. File, Folder, Disk, and TrashCan are control Objects",
+      "C. Icon, TrashCan, and pointer are entity objects",
+      "D. File, Folder, and Disk are Entity objects"
+    ],
+    "correctAnswer": "D. File, Folder, and Disk are Entity objects",
+    "explanation": "Entity objects represent persistent information (File, Folder, Disk). Boundary objects handle UI (Icon, Pointer). Control objects manage interactions (TrashCan action handler).",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which one of the following statements is incorrect?",
+    "options": [
+      "A. High cohesion subsystem contains related objects performing similar tasks",
+      "B. In weakly coupled, changes to one subsystem likely to affect the other",
+      "C. Low cohesion subsystem contains a number of unrelated objects",
+      "D. In strongly coupled, changes to one subsystem likely to affect the other"
+    ],
+    "correctAnswer": "B. In weakly coupled, changes to one subsystem likely to affect the other",
+    "explanation": "Weak coupling means changes in one subsystem have minimal effect on others. Strong coupling means changes likely affect others.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Suppose you are requested to develop a web-based system... Based on the above activities, what type of software process model you used?",
+    "options": ["A. Agile model", "B. Waterfall model", "C. Incremental model", "D. Iterative model"],
+    "correctAnswer": "C. Incremental model",
+    "explanation": "Delivering working modules incrementally with full development cycles for each module describes incremental model.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "In which type of project used in re-design and/or re-implementation of an existing system using newer technology?",
+    "options": ["A. Green field", "B. Re-engineering", "C. Interface engineering project", "D. None"],
+    "correctAnswer": "B. Re-engineering",
+    "explanation": "Re-engineering involves redesigning/rewriting existing systems with new technology.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Assume the following risk called \"selected middleware too slow to meet performance requirement for data logging\" has been identified. Then which one is the mitigation strategy?",
+    "options": [
+      "A. Plan for a performance evaluation prototype",
+      "B. Develop alternate interface",
+      "C. Assign key developers to this task.",
+      "D. Increase the priority of this task"
+    ],
+    "correctAnswer": "A. Plan for a performance evaluation prototype",
+    "explanation": "Performance risk is mitigated by early prototyping and evaluation to verify performance before full implementation.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "What is the correct interpretation of the following CSS script snippet? p.class1 { text-align: center; }",
+    "options": ["A. All paragraphs get centered", "B. All paragraphs with the class of class1 get centered"],
+    "correctAnswer": "B. All paragraphs with the class of class1 get centered",
+    "explanation": "CSS selector p.class1 targets <p> elements with class=\"class1\", not all paragraphs.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Choose the correct interpretation of the following CSS script snippet: <style> p {color: red;} #p2{color: inherit;} </style> <p>Hello paragraph 1</p> <p id=\"p2\">Hello paragraph 2</p> <p>Hello paragraph 3</p>",
+    "options": [
+      "A. All paragraphs are red colored.",
+      "B. All paragraphs are black colored.",
+      "C. Except paragraph 2 all are red colored.",
+      "D. None of the above"
+    ],
+    "correctAnswer": "C. Except paragraph 2 all are red colored.",
+    "explanation": "Paragraph 2 has id=\"p2\" with color:inherit, inheriting from parent (likely default black). Others are red.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which of the following JavaScript display method is used to change the content of HTML elements.",
+    "options": ["A. innerHTML", "B. document.write()", "C. console.log()", "D. window.alert()"],
+    "correctAnswer": "A. innerHTML",
+    "explanation": "innerHTML property allows getting/setting HTML content of elements. Others write to different outputs.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which one is true regarding variable declaration in JavaScript?",
+    "options": [
+      "A. Const declares read only global variables.",
+      "B. Let declares block scoped, local variables.",
+      "C. Var declares local scope, read-only variables.",
+      "D. All of the above"
+    ],
+    "correctAnswer": "B. Let declares block scoped, local variables.",
+    "explanation": "let has block scope, var has function scope, const declares constants (not necessarily global).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which one of the following will attach one file to another in PHP?",
+    "options": ["A. include(\"file2.php\")", "B. import(\"file2.php\")", "C. attach(\"file2.php\")", "D. None of the above."],
+    "correctAnswer": "A. include(\"file2.php\")",
+    "explanation": "include() includes and evaluates the specified file in PHP.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which one is true about session and cookies?",
+    "options": [
+      "A. Cookies can be disabled on client machine but sessions are not.",
+      "B. Session is stored on web server but cookies are stored on client.",
+      "C. Cookies stay on the client until their expiry time.",
+      "D. All of the above."
+    ],
+    "correctAnswer": "D. All of the above.",
+    "explanation": "All statements are true about differences between sessions and cookies.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "One of the following methods is used to send binary input to server in HTML forms.",
+    "options": ["A. POST", "B. GET", "C. HTTP", "D. None of the above"],
+    "correctAnswer": "A. POST",
+    "explanation": "POST method can send binary data in request body; GET appends data to URL with limitations.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which way of setting a new cookie is correct, with key of 'Location' and value of 'Harar'?",
+    "options": [
+      "A. setcookie(\"Harar\", \"Location\")",
+      "B. setcookie(\"Location\", \"Harar\")",
+      "C. setcookie(\"Location\", time() + 60, \"Harar\")",
+      "D. setcookie(time() + 60, \"Location\", \"Harar\")"
+    ],
+    "correctAnswer": "B. setcookie(\"Location\", \"Harar\")",
+    "explanation": "Correct syntax: setcookie(name, value). Options C,D have incorrect parameter order.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "What is information about data called?",
+    "options": ["A. Hyper data", "B. Tera data", "C. Meta data", "D. Relations"],
+    "correctAnswer": "C. Meta data",
+    "explanation": "Metadata is data about data, describing structure, constraints, etc.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "What does an RDBMS consist of?",
+    "options": ["A. Collection of Records", "B. Collection of Keys", "C. Collection of Tables", "D. Collection of Fields"],
+    "correctAnswer": "C. Collection of Tables",
+    "explanation": "RDBMS organizes data into tables (relations) with rows and columns.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "The ability to query data, as well as insert, delete, and alter tuples, is offered by",
+    "options": ["A. TCL (Transaction Control Language)", "B. DCL (Data Control Language)", "C. DDL (Data Definition Language)", "D. DML (Data Manipulation Language)"],
+    "correctAnswer": "D. DML (Data Manipulation Language)",
+    "explanation": "DML handles data manipulation: SELECT, INSERT, UPDATE, DELETE.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "What happens if a piece of data is stored in two places in the database?",
+    "options": ["A. Storage space is wasted & changing the data in one spot will cause data inconsistency"],
+    "correctAnswer": "A. Storage space is wasted & changing the data in one spot will cause data inconsistency",
+    "explanation": "Data redundancy wastes storage and risks inconsistency if updates aren't synchronized.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "In E-R diagram derived attribute are represented by",
+    "options": ["A. Ellipse", "B. Dashed ellipse", "C. Rectangle", "D. Triangle"],
+    "correctAnswer": "B. Dashed ellipse",
+    "explanation": "Derived attributes (computed from others) shown with dashed ellipse in ER diagrams.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Various concurrency-control schemes are used to ensure",
+    "options": ["A. Serializability", "B. Deadlock prevention", "C. Timeouts", "D. Locking states"],
+    "correctAnswer": "A. Serializability",
+    "explanation": "Concurrency control ensures transactions execute in a serializable schedule.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "The most common concurrency-control schemes include locking protocols and",
+    "options": ["A. Timestamp-ordering schemes", "B. Validation techniques", "C. Multiversion schemes", "D. All of the Above"],
+    "correctAnswer": "D. All of the Above",
+    "explanation": "All are common concurrency control schemes.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "An integral part of database that can restore the database to the consistent state of before failure is called",
+    "options": ["A. Recovery system", "B. Backup system", "C. Log manager", "D. Checkpoint"],
+    "correctAnswer": "A. Recovery system",
+    "explanation": "Recovery system restores database to consistent state after failure.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which of the following is a basic form of grant statement?",
+    "options": [
+      "A. GRANT 'privilege list' ON 'relation name or view name' TO 'user/role list';",
+      "B. GRANT 'privilege list' ON 'user/role list' TO 'relation name or view name';",
+      "C. GRANT 'privilege list' TO 'user/role list';",
+      "D. GRANT 'privilege list' ON 'relation name or view name' ON 'user/role list';"
+    ],
+    "correctAnswer": "A. GRANT 'privilege list' ON 'relation name or view name' TO 'user/role list';",
+    "explanation": "Correct SQL GRANT syntax: GRANT privileges ON object TO users/roles.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which of the following is true concerning the statement: class Manager extends Employee",
+    "options": [
+      "A. Manager is a concrete class and a subclass",
+      "B. Manager is a concrete class and a superclass",
+      "C. Manager is an abstract class and a subclass",
+      "D. Manager is an abstract class and a superclass"
+    ],
+    "correctAnswer": "A. Manager is a concrete class and a subclass",
+    "explanation": "Manager extends Employee, so it's a subclass. Unless declared abstract, it's concrete.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "What is encapsulation in OOP?",
+    "options": [
+      "A. It is a way of combining various data members and member functions that operate on those data members into a single unit.",
+      "B. It is a way of combining various data members and member functions into a single unit which can operate on any data",
+      "C. It is a way of combining various data members into a single unit",
+      "D. It is a way of combining various member functions into a single unit"
+    ],
+    "correctAnswer": "A. It is a way of combining various data members and member functions that operate on those data members into a single unit.",
+    "explanation": "Encapsulation bundles data and methods operating on that data into a class.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "In which access should a constructor be defined so object can be created in any function?",
+    "options": ["A. Any access specifier will work", "B. Private", "C. Public", "D. Protected"],
+    "correctAnswer": "C. Public",
+    "explanation": "Constructors must be public to allow object creation outside the class.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which OOP concept binds code and data together securely?",
+    "options": ["A. Polymorphism", "B. Inheritance", "C. Encapsulation", "D. Abstraction"],
+    "correctAnswer": "C. Encapsulation",
+    "explanation": "Encapsulation binds data and methods, hiding implementation details.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which is not an OOPS concept?",
+    "options": ["A. Encapsulation", "B. Polymorphism", "C. Exception", "D. Abstraction"],
+    "correctAnswer": "C. Exception",
+    "explanation": "Exception handling is a programming concept, not a core OOP concept.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Runtime polymorphism feature in java is",
+    "options": ["A. Method overriding", "B. Method overloading", "C. Operator overloading", "D. Constructor overloading"],
+    "correctAnswer": "A. Method overriding",
+    "explanation": "Runtime polymorphism achieved through method overriding (dynamic method dispatch).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which is true about Prim's algorithm?",
+    "options": [
+      "A. Prim's algorithm initializes with a vertex.",
+      "B. Prim's algorithm initializes with an edge.",
+      "C. Prim's algorithm initializes with a vertex which has smallest edge.",
+      "D. Prim's algorithm initializes with a forest."
+    ],
+    "correctAnswer": "A. Prim's algorithm initializes with a vertex.",
+    "explanation": "Prim's starts from an arbitrary vertex and grows the MST.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Worst-case time complexity of Prim's with adjacency matrix?",
+    "options": ["A. O(log V)", "B. O(V²)", "C. O(E²)", "D. O(V log E)"],
+    "correctAnswer": "B. O(V²)",
+    "explanation": "With an adjacency matrix and simple implementation, Prim's algorithm runs in O(V²).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "A person wants to visit places starting from vertex, visit every vertex till finishes, backtracks. What algorithm?",
+    "options": ["A. Depth First Search", "B. Breadth First Search", "C. Trim's algorithm", "D. Kruskal's Algorithm"],
+    "correctAnswer": "A. Depth First Search",
+    "explanation": "DFS explores as far as possible before backtracking.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which OSI layer responsible for order preservation of packets if jitter in arrival?",
+    "options": ["A. Presentation Layer", "B. Data link Layer", "C. Transport Layer", "D. Network Layer"],
+    "correctAnswer": "C. Transport Layer",
+    "explanation": "Transport layer handles sequencing and reliability (e.g., TCP).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "According to IEEE 802 standard, right ordering of layers:",
+    "options": [
+      "A. MAC Layer, IP Layer, TCP Layer, LLC Layer, Application Layer",
+      "B. MAC Layer, LLC Layer, IP Layer, TCP Layer, Application Layer",
+      "C. LLC Layer, MAC Layer, IP Layer, TCP Layer, Application Layer"
+    ],
+    "correctAnswer": "C. LLC Layer, MAC Layer, IP Layer, TCP Layer, Application Layer",
+    "explanation": "IEEE 802 defines LLC above MAC, then network (IP), transport (TCP), application.",
+    "difficulty": "medium"
+  }
+]
+

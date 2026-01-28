@@ -69,4 +69,10 @@ export const resultAPI = {
   getResult: (id) => api.get(`/results/${id}`),
 };
 
+// Exit Exam API (Student only)
+export const exitExamAPI = {
+  start: () => api.post("/exit-exam/start"),
+  submit: (data) => api.post("/exit-exam/submit", data),
+};
+
 export default api;

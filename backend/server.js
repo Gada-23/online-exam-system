@@ -29,6 +29,7 @@ app.use("/api/auth", require("./routes/authRoutes"));
 app.use("/api/questions", require("./routes/questionRoutes"));
 app.use("/api/exams", require("./routes/examRoutes"));
 app.use("/api/results", require("./routes/resultRoutes"));
+app.use("/api/exit-exam", require("./routes/exitExamRoutes"));
 
 const PORT = process.env.PORT || 5000;
 

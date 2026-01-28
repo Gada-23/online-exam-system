@@ -34,13 +34,21 @@ const ResultPage = () => {
   }
 
   const percentage = ((result.score / result.totalQuestions) * 100).toFixed(1);
+  const title = result.examId?.title || result.examTitle || "Exam";
+  const subject = result.examId?.subject || result.examSubject || "";
+
+  // Prefer stored snapshot (exit_exam or any result created after snapshot support)
+  const snapshot = Array.isArray(result.questionsSnapshot) ? result.questionsSnapshot : [];
+  const answersByQuestionId = new Map(
+    (result.answers || []).map((a) => [a.questionId?.toString?.() || a.questionId, a])
+  );
 
   return (
     <div className="container">
       <div className="score-display">
         <h1>Exam Results</h1>
-        <h2>{result.examId.title}</h2>
-        <p>{result.examId.subject}</p>
+        <h2>{title}</h2>
+        {subject && <p>{subject}</p>}
         <div className="score">
           {result.score} / {result.totalQuestions}
         </div>
@@ -52,13 +60,21 @@ const ResultPage = () => {
 
       <div className="card">
         <h2>Question Review</h2>
-        {result.answers.map((answer, index) => {
-          const question = answer.questionId;
+        {(snapshot.length > 0 ? snapshot : []).map((question, index) => {
+          const answer = answersByQuestionId.get(question.questionId?.toString?.() || question.questionId) || {
+            selectedAnswer: "",
+            isCorrect: false,
+          };
           return (
             <div key={index} className="question-card">
               <h4>
                 Question {index + 1}: {question.questionText}
               </h4>
+              {question.subject && (
+                <p style={{ marginTop: "6px", opacity: 0.8 }}>
+                  <strong>Course:</strong> {question.subject}
+                </p>
+              )}
               <div>
                 {question.options.map((option, optIndex) => {
                   let className = "option";
@@ -92,8 +108,18 @@ const ResultPage = () => {
                   fontWeight: "bold",
                 }}
               >
-                {answer.isCorrect ? "✓ Correct" : "✗ Incorrect"}
+                {answer.selectedAnswer
+                  ? answer.isCorrect
+                    ? "✓ Correct"
+                    : "✗ Incorrect"
+                  : "— Not Answered"}
               </p>
+
+              {question.explanation && (
+                <div className="mt-2" style={{ opacity: 0.95 }}>
+                  <strong>Explanation:</strong> {question.explanation}
+                </div>
+              )}
             </div>
           );
         })}

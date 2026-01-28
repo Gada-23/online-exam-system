@@ -26,6 +26,11 @@ const questionSchema = new mongoose.Schema(
       type: String,
       required: [true, "Please provide the correct answer"],
     },
+    explanation: {
+      type: String,
+      trim: true,
+      default: "",
+    },
     difficulty: {
       type: String,
       enum: ["easy", "medium", "hard"],

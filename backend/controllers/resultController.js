@@ -1,6 +1,5 @@
 const Result = require("../models/Result");
 const Exam = require("../models/Exam");
-const Question = require("../models/Question");
 
 // @desc    Submit exam answers
 // @route   POST /api/results
@@ -34,22 +33,10 @@ exports.submitExam = async (req, res) => {
       });
     }
 
-    // Check if student already submitted this exam
-    const existingResult = await Result.findOne({
-      studentId: req.user.id,
-      examId: examId,
-    });
-
-    if (existingResult) {
-      return res.status(400).json({
-        success: false,
-        message: "You have already submitted this exam",
-      });
-    }
-
     // Calculate score
     let score = 0;
     const answerDetails = [];
+    const questionsSnapshot = [];
 
     for (const answer of answers) {
       const question = exam.questions.find(
@@ -73,13 +60,30 @@ exports.submitExam = async (req, res) => {
       });
     }
 
+    // Snapshot questions (in the order of the exam questions)
+    for (const question of exam.questions) {
+      questionsSnapshot.push({
+        questionId: question._id,
+        subject: exam.subject,
+        questionText: question.questionText,
+        options: question.options,
+        correctAnswer: question.correctAnswer,
+        explanation: question.explanation || "",
+      });
+    }
+
     // Create result
     const result = await Result.create({
       studentId: req.user.id,
       examId: examId,
+      examType: "standard",
+      examTitle: exam.title,
+      examSubject: exam.subject,
+      examDuration: exam.duration,
       score: score,
       totalQuestions: exam.questions.length,
       answers: answerDetails,
+      questionsSnapshot,
     });
 
     const populatedResult = await Result.findById(result._id)
@@ -142,8 +146,7 @@ exports.getResult = async (req, res) => {
 
     const result = await Result.findOne(query)
       .populate("studentId", "name email")
-      .populate("examId", "title subject duration")
-      .populate("answers.questionId", "questionText options correctAnswer");
+      .populate("examId", "title subject duration");
 
     if (!result) {
       return res.status(404).json({

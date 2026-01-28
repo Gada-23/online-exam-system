@@ -9,6 +9,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import StudentDashboard from "./pages/StudentDashboard";
 import ExamPage from "./pages/ExamPage";
+import ExitExamPage from "./pages/ExitExamPage";
 import ResultPage from "./pages/ResultPage";
 import AdminDashboard from "./pages/AdminDashboard";
 import ManageQuestions from "./pages/ManageQuestions";
@@ -40,6 +41,14 @@ function AppRoutes() {
         element={
           <PrivateRoute role="student">
             <ExamPage />
+          </PrivateRoute>
+        }
+      />
+      <Route
+        path="/exit-exam"
+        element={
+          <PrivateRoute role="student">
+            <ExitExamPage />
           </PrivateRoute>
         }
       />

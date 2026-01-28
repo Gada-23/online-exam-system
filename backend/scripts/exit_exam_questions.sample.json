@@ -1,0 +1,10 @@
+[
+  {
+    "subject": "Operating Systems",
+    "questionText": "Sample question: Which option is correct?",
+    "options": ["A", "B", "C", "D"],
+    "correctAnswer": "B",
+    "difficulty": "medium"
+  }
+]
+
