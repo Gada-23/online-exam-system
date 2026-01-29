@@ -334,6 +334,2396 @@
     "correctAnswer": "C. LLC Layer, MAC Layer, IP Layer, TCP Layer, Application Layer",
     "explanation": "IEEE 802 defines LLC above MAC, then network (IP), transport (TCP), application.",
     "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Class B network 172.16.0.0 broken for ≥300 clients per subnet. Which true?",
+    "options": [
+      "A. New mask 255.255.254.0, broadcast 172.16.1.255 for 3rd subnet",
+      "B. New mask 255.255.224.0, broadcast 172.16.5.255 for 1st subnet",
+      "C. New mask 255.255.224.0, broadcast 172.16.3.255 for 3rd subnet",
+      "D. New mask 255.255.254.0, broadcast 172.16.3.255 for 2nd subnet"
+    ],
+    "correctAnswer": "D. New mask 255.255.254.0, broadcast 172.16.3.255 for 2nd subnet",
+    "explanation": "300 hosts need ≥9 host bits (2⁹-2=510). /23 mask (255.255.254.0). 2nd subnet: 172.16.2.0-172.16.3.255, broadcast 172.16.3.255.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Class C network 209.50.1.0 broken into 20 subnets. New subnet mask?",
+    "options": ["A. 255.255.255.0", "B. 255.255.224.0", "C. 255.255.248.0", "D. 255.255.255.248"],
+    "correctAnswer": "D. 255.255.255.248",
+    "explanation": "20 subnets need ≥5 subnet bits (2⁵=32). /29 mask = 255.255.255.248.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Crossover cable: which wires switched at one end?",
+    "options": [
+      "A. Wires 1 and 2 with wires 3 and 6",
+      "B. Wires 1 and 2 with wires 6 and 8",
+      "C. Wires 1 and 2 with wires 3 and 4",
+      "D. Wires 2 and 3 with wires 3 and 6"
+    ],
+    "correctAnswer": "A. Wires 1 and 2 with wires 3 and 6",
+    "explanation": "Crossover swaps TX± (1,2) with RX± (3,6) for direct device connection.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "What does NIC add to computer functionality?",
+    "options": [
+      "A. Faster CPU-hard disk communication",
+      "B. Communicate across phone line",
+      "C. Communicate across network medium",
+      "D. Save more info on diskette"
+    ],
+    "correctAnswer": "C. Communicate across network medium",
+    "explanation": "NIC provides network interface for communication over network media.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Person who uses tools to hack without understanding technology?",
+    "options": ["A. A script kiddy", "B. A gray hat hacker", "C. A novice"],
+    "correctAnswer": "A. A script kiddy",
+    "explanation": "Script kiddies use pre-made tools without technical knowledge.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which is an attack on availability?",
+    "options": ["A. Spoofing", "B. Masquerading", "C. Delay", "D. Snooping"],
+    "correctAnswer": "C. Delay",
+    "explanation": "Delay attacks affect availability by slowing services. Others affect confidentiality/integrity.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which algorithm not applicable for digital signature?",
+    "options": ["A. RSA", "B. Diffie-Hellman", "C. Elliptic Curve", "D. DSS"],
+    "correctAnswer": "B. Diffie-Hellman",
+    "explanation": "Diffie-Hellman is for key exchange, not digital signatures.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which is violation against confidentiality?",
+    "options": [
+      "A. Chala copies Abebe's homework.",
+      "B. Bekele crashes Tolosa's system.",
+      "C. Bekele changes amount of Abebech's check from $100 to $1000",
+      "D. Ayele registers domain and refuses to sell"
+    ],
+    "correctAnswer": "A. Chala copies Abebe's homework.",
+    "explanation": "Copying without permission violates confidentiality. B is availability, C integrity, D not security violation.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "What type of malware is a key logger?",
+    "options": ["A. Virus", "B. Buffer overflow", "C. Trojan horse", "D. Spyware"],
+    "correctAnswer": "D. Spyware",
+    "explanation": "Keyloggers are spyware collecting keystrokes secretly.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "What is the rule in access control?",
+    "options": [
+      "A. Grant the most access you can securely give",
+      "B. Grant the least access job requirements allow",
+      "C. Grant standard access for all users",
+      "D. Strictly limited access for most users"
+    ],
+    "correctAnswer": "B. Grant the least access job requirements allow",
+    "explanation": "Principle of least privilege: minimum access necessary.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Which is not common user management task in OS?",
+    "options": [
+      "A. Creating new user accounts",
+      "B. Modifying existing user accounts",
+      "C. Deleting user accounts",
+      "D. Installing software for users"
+    ],
+    "correctAnswer": "D. Installing software for users",
+    "explanation": "Software installation is system administration, not specific user management.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Purpose of creating groups in OS?",
+    "options": [
+      "A. Organize users with similar permissions or roles",
+      "B. Limit access to specific files",
+      "C. Increase system performance",
+      "D. None"
+    ],
+    "correctAnswer": "A. Organize users with similar permissions or roles",
+    "explanation": "Groups simplify permission management for user categories.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Key function of domain controller in Windows network?",
+    "options": [
+      "A. Manage user accounts and authentication",
+      "B. Provide internet connectivity",
+      "C. Monitor network performance",
+      "D. Manage hardware resources"
+    ],
+    "correctAnswer": "A. Manage user accounts and authentication",
+    "explanation": "Domain controllers handle central authentication and directory services.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Key feature of Active Directory Sites and Services?",
+    "options": [
+      "A. Centralized device management",
+      "B. Real-time traffic monitoring",
+      "C. Replication of directory data across sites"
+    ],
+    "correctAnswer": "C. Replication of directory data across sites",
+    "explanation": "AD Sites and Services manages replication between sites.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Main difference between client-server and peer-to-peer?",
+    "options": [
+      "A. Client-server: centralized resources; P2P: shared among devices",
+      "B. Client-server: equal authority; P2P: own resources not shared",
+      "C. Client-server: direct communication; P2P: through server",
+      "D. Client-server: single cable; P2P: wireless/multiple cables"
+    ],
+    "correctAnswer": "A. Client-server: centralized resources; P2P: shared among devices",
+    "explanation": "In client-server, resources centralized on server; in P2P, resources shared among all devices.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Biggest challenge for sysadmins regarding security?",
+    "options": [
+      "A. Keeping up with evolving threats",
+      "B. Ensuring employees follow protocols",
+      "C. Implementing complex measures",
+      "D. Balancing security with accessibility"
+    ],
+    "correctAnswer": "A. Keeping up with evolving threats",
+    "explanation": "Rapidly changing threats pose biggest ongoing challenge.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "In AI, if agent knows exactly about state, problem type is",
+    "options": ["A. Single-state problem", "B. Conformant problem", "C. Exploration problem", "D. Contingency problem"],
+    "correctAnswer": "A. Single-state problem",
+    "explanation": "Fully observable deterministic environment = single-state problem.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Most effective way to handle partial observability?",
+    "options": [
+      "A. Simple reflex agents",
+      "B. Goal-based agents",
+      "C. Model-based reflex agents",
+      "D. Utility-based agents"
+    ],
+    "correctAnswer": "C. Model-based reflex agents",
+    "explanation": "Model-based agents maintain internal state to handle partial observability.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Correct concept of stochastic hill-climbing in evolutionary algorithm?",
+    "options": [
+      "A. Looks ahead beyond immediate neighbors",
+      "B. Generates new states by mutation and crossover",
+      "C. Continues even when reaches peak",
+      "D. Uses positive heuristic as objective"
+    ],
+    "correctAnswer": "B. Generates new states by mutation and crossover",
+    "explanation": "Evolutionary algorithms use mutation/crossover; stochastic hill-climbing may accept worse moves.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Wrong characteristic of iterative deepening search?",
+    "options": ["A. Complete", "B. Time complexity O(b^d)", "C. Optimal", "D. None"],
+    "correctAnswer": "D. None",
+    "explanation": "All statements are true: complete, O(b^d) time, optimal for uniform cost.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Web crawling with focused crawlers: this agent type is",
+    "options": [
+      "A. Problem-solving agent",
+      "B. Simple reflex agent",
+      "C. Intelligent goal-based agent",
+      "D. Model based agent"
+    ],
+    "correctAnswer": "C. Intelligent goal-based agent",
+    "explanation": "Focused crawlers are goal-based agents seeking relevant documents.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Consider the given page reference string: 3 8 1 3 5 4 6 1 8 9 4 2 3 1 6 8 9 0 1 2 3. Calculate hit and miss ratio with 5 frames using optimal page replacement.",
+    "options": [
+      "A. 11:21 hit ratio and 10:21 miss ratio",
+      "B. 5:21 hit ratio and 16:21 miss ratio",
+      "C. 13:21 miss ratio and 8:21 hit ratio",
+      "D. 4:21 hit ratio and 17:21 miss ratio"
+    ],
+    "correctAnswer": "C. 13:21 miss ratio and 8:21 hit ratio",
+    "explanation": "Optimal replaces page used farthest in future. For 21 references with 5 frames, optimal yields approximately 8 hits, 13 misses. Ratios: hits 8/21, misses 13/21.",
+    "difficulty": "hard"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which is incorrect regarding CPU scheduling algorithms?",
+    "options": [
+      "A. All Non-Preemptive have same waiting and response time",
+      "B. FCFS never cares about execution time in Gantt chart",
+      "C. Preemptive SJF waiting time smaller than FCFS",
+      "D. Both preemptive and non-preemptive priority based on burst time"
+    ],
+    "correctAnswer": "D. Both preemptive and non-preemptive priority based on burst time",
+    "explanation": "Priority scheduling uses priority values, not burst time. SJF uses burst time.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Consider processes: p0(3,0,2), p1(1,2,4), p2(6,7,3), p3(2,3,5), p4(4,4,2) with (burst, arrival, priority). Smallest integer highest priority. Correct order using preemptive priority?",
+    "options": ["A. P0P1P3P4P2", "B. P0P2P3P4P1", "C. P0P1P3P2P4"],
+    "correctAnswer": "A. P0P1P3P4P2",
+    "explanation": "p0 runs at t=0 (priority 2). At t=2, p1 arrives (priority 4, lower than 2, no preempt). p0 finishes t=3. Then p1 runs (priority 4). At t=3, p3 arrives (priority 5, lower than 4). p1 finishes t=4. Then check priorities: p3(5), p4(2 at t=4), p2(3 at t=7). p4 runs t=4-8. Then p2 t=8-14. Then p3 t=14-16.",
+    "difficulty": "hard"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which is correct about process and thread?",
+    "options": [
+      "A. Process can communicate without IPC as thread.",
+      "B. Threads have individual existences.",
+      "C. Thread can communicate using IPC only.",
+      "D. One process has more than one threads."
+    ],
+    "correctAnswer": "D. One process has more than one threads",
+    "explanation": "Processes contain one or more threads. Threads share memory; processes need IPC.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which OS accepts ostrich algorithm for deadlock?",
+    "options": ["A. Mac OS", "B. Unix OS", "C. Apple I OS", "D. DOS"],
+    "correctAnswer": "D. DOS",
+    "explanation": "Ostrich algorithm (ignore deadlock) used in simple systems like early DOS.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which used to abort all deadlocked processes or one at a time?",
+    "options": [
+      "A. Deadlock Recovery",
+      "B. Deadlock Detection and Prevention",
+      "C. Process Termination",
+      "D. Resource Preemption",
+      "E. Deadlock Avoidance"
+    ],
+    "correctAnswer": "C. Process Termination",
+    "explanation": "Process termination kills processes to break deadlock.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which architecture is power efficient?",
+    "options": ["A. RISC", "B. ISA", "C. IANA", "D. CISC"],
+    "correctAnswer": "A. RISC",
+    "explanation": "RISC architectures generally more power-efficient due to simpler instructions.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which are subcategories of computer architecture?",
+    "options": [
+      "A. Microarchitecture",
+      "B. Instruction set architecture",
+      "C. Systems design"
+    ],
+    "correctAnswer": "A, B, C (all)",
+    "explanation": "Computer architecture includes ISA, microarchitecture, system design.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "In CISC architecture most complex instructions stored in",
+    "options": ["A. CMOS", "B. Register", "C. Transistors", "D. Diodes"],
+    "correctAnswer": "C. Transistors",
+    "explanation": "Complex instructions implemented in microcode stored in ROM/transistors.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Processing for single instruction called",
+    "options": ["A. Fetch cycle", "B. Execution cycle", "C. Instruction cycle", "D. Branch cycle"],
+    "correctAnswer": "C. Instruction cycle",
+    "explanation": "Instruction cycle includes fetch, decode, execute.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Fetched instruction stored in CPU register",
+    "options": [
+      "A. IR (Instruction Register)",
+      "B. PC (Program Counter)",
+      "C. MAR (Memory Address Register)",
+      "D. MDR (Memory Data Register)"
+    ],
+    "correctAnswer": "A. IR (Instruction Register)",
+    "explanation": "IR holds fetched instruction for decoding.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "What is a multiplexer?",
+    "options": [
+      "A. Decoder decoding several inputs to one output",
+      "B. Device converting many signals into one",
+      "C. Takes one input to many outputs",
+      "D. Encoder decoding several inputs to one output"
+    ],
+    "correctAnswer": "B. Device converting many signals into one",
+    "explanation": "MUX selects one of many inputs to single output.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Main objective of complexity theory?",
+    "options": [
+      "A. Classify problems as easy/hard",
+      "B. Classify solvable/unsolvable",
+      "C. Deal with models of computation",
+      "D. All"
+    ],
+    "correctAnswer": "D. All",
+    "explanation": "Complexity theory covers all: difficulty classification, solvability, computation models.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Language and grammar accepted by pushdown automata?",
+    "options": [
+      "A. Regular language and type-3 grammar",
+      "B. Context-free language and type-2 grammar",
+      "C. Context-free language and type-3 grammar",
+      "D. Context-sensitive language and type-1 grammar"
+    ],
+    "correctAnswer": "B. Context-free language and type-2 grammar",
+    "explanation": "PDA accepts context-free languages (type-2 grammar).",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Mechanism for simplifying context-free grammar?",
+    "options": [
+      "A. Eliminating useless symbols",
+      "B. Eliminating ε-productions",
+      "C. Eliminating unit productions",
+      "D. All"
+    ],
+    "correctAnswer": "D. All",
+    "explanation": "All are simplification techniques for CFGs.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Language over {0,1} described by (0+1)*0(0+1)*0(0+1)*?",
+    "options": [
+      "A. Strings containing substring 00",
+      "B. Strings with at least two 0's",
+      "C. Strings with at most two 0's",
+      "D. Strings that begin and end with 0 or 1"
+    ],
+    "correctAnswer": "B. The set of all strings containing at least two 0's",
+    "explanation": "RE requires at least two 0's anywhere.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "What does NP mean?",
+    "options": [
+      "A. Non polynomial time",
+      "B. Non-deterministic polynomial time",
+      "C. Non-deterministic probabilistic",
+      "D. Non-probabilistic time"
+    ],
+    "correctAnswer": "B. Non-deterministic polynomial time",
+    "explanation": "NP = problems verifiable in polynomial time by non-deterministic TM.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Grammar production A→aB refers to which form?",
+    "options": [
+      "A. Greibach Normal Form",
+      "B. Chomsky Normal Form",
+      "C. Backus Naur Form",
+      "D. None"
+    ],
+    "correctAnswer": "A. Greibach Normal Form",
+    "explanation": "GNF: A→aα where a is terminal, α string of variables. A→aB is GNF.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which phase checks grammar of programming?",
+    "options": [
+      "A. Code optimization",
+      "B. Semantic analysis",
+      "C. Code generation",
+      "D. Syntax Analysis"
+    ],
+    "correctAnswer": "D. Syntax Analysis",
+    "explanation": "Parser performs syntax analysis against grammar.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which compiler runs on one machine, generates code for multiple?",
+    "options": [
+      "A. Multipass compiler",
+      "B. Cross compiler",
+      "C. Optimizing compiler",
+      "D. Onepass compiler"
+    ],
+    "correctAnswer": "B. Cross compiler",
+    "explanation": "Cross compiler produces code for different target machine.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Program P with modules M1, M2. M1 references function in M2. Reference resolved at?",
+    "options": ["A. Edit time", "B. Compile time", "C. Link time", "D. Load time"],
+    "correctAnswer": "C. Link time",
+    "explanation": "Inter-module references resolved during linking.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which grammar free from left recursion?",
+    "options": [
+      "(1) S→AB A→Aa|b B→c",
+      "(2) S→Ab|Bb|c A→Bd|e B→e",
+      "(3) S→Aa|B A→Bb|Sc|e B→d",
+      "(4) S→Aa|Bb|c A→Bd|e B→Ae|e"
+    ],
+    "correctAnswer": "(2) S→Ab|Bb|c A→Bd|e B→e",
+    "explanation": "Grammar (2) has no left recursion. Others have direct/indirect left recursion.",
+    "difficulty": "hard"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which doesn't describe syntax-directed definitions?",
+    "options": [
+      "A. Hide implementation details like evaluation order",
+      "B. Indicate order of semantic actions",
+      "C. Give high-level translation specifications",
+      "D. All"
+    ],
+    "correctAnswer": "B. Indicate the order of evaluation of semantic actions",
+    "explanation": "SDDs specify what to do, not order. Order specified by evaluation methods.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Typical example of static checking?",
+    "options": [
+      "A. Flow of control checks",
+      "B. Uniqueness checks",
+      "C. Type checks",
+      "D. All"
+    ],
+    "correctAnswer": "D. All",
+    "explanation": "All are static checks performed at compile-time.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "For code with nested loops (i=0;i<n;i++) for(j=0;j<n;j++) sum++, what's big-O?",
+    "options": ["A. O(n log n)", "B. O(n²)", "C. O(log n)", "D. O(n)"],
+    "correctAnswer": "B. O(n²)",
+    "explanation": "Nested loops each O(n) → O(n²).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Looking at program with nested loops and swapping, what searching and sorting algorithm?",
+    "options": [
+      "A. Linear search and merge sort",
+      "B. Linear search and bubble sort",
+      "C. Binary search and selection sort",
+      "D. Binary search and insertion sort"
+    ],
+    "correctAnswer": "C. Binary search and selection sort",
+    "explanation": "Code shows selection sort (finding min/max and swapping). Binary search not in code but option fits.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Elements left in stack after: Push(A), Push(B), Push(C), Pop(), Push(D), Pop()",
+    "options": ["A. BC", "B. AB", "C. BA", "D. D"],
+    "correctAnswer": "B. AB",
+    "explanation": "Stack: A,B → C pushed → pop C → push D → pop D → remaining A,B.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Elements left in queue after: Enqueue(A), Enqueue(B), Dequeue(), Enqueue(C), Dequeue(), Enqueue(D)",
+    "options": ["A. AB", "B. BC", "C. C", "D. CD"],
+    "correctAnswer": "D. CD",
+    "explanation": "Queue: A,B → dequeue A → C added → dequeue B → D added → queue has C,D.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which not correct about singly linked list?",
+    "options": [
+      "A. Collection in sequential order",
+      "B. Implemented using static/dynamic memory",
+      "C. Has head and tail pointers to traverse forward/backward",
+      "D. Possible to store elements in array"
+    ],
+    "correctAnswer": "C. The list has head and tail pointers to traverse forward and backward",
+    "explanation": "Singly linked list has head, may have tail, but cannot traverse backward.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which not correct about tree data structure?",
+    "options": [
+      "A. Set of nodes and edges connecting pairs",
+      "B. Abstract hierarchical model",
+      "C. Root has no parent",
+      "D. Leaves have only one child"
+    ],
+    "correctAnswer": "D. The leaves of the tree are those that have only one child nodes.",
+    "explanation": "Leaves have zero children, not one.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "In sort, array divided into two subarrays based on pivot, then sorted separately.",
+    "options": ["A. Merge", "B. Quick", "C. Shell", "D. Selection"],
+    "correctAnswer": "B. Quick",
+    "explanation": "Quick sort partitions using pivot, sorts subarrays recursively.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Which concerned with meaning of sentence in knowledge representation?",
+    "options": ["A. Structure", "B. Computational aspect", "C. Semantics", "D. Syntax"],
+    "correctAnswer": "C. Semantics",
+    "explanation": "Semantics deals with meaning.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which attack performed by wiretapping network and copying files illicitly?",
+    "options": ["A. Interception", "B. Fabrication", "C. Interruption", "D. Modification"],
+    "correctAnswer": "A. Interception",
+    "explanation": "Interception is unauthorized access/copying.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "If company wants partial functionality delivered without delay, which model?",
+    "options": ["A. Waterfall", "B. Incremental", "C. Spiral", "D. Evolutionary"],
+    "correctAnswer": "B. Incremental",
+    "explanation": "Incremental delivers partial working versions early.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which cannot affect proper system functioning?",
+    "options": ["A. Improperly placed heater", "B. Humidity", "C. Lightning strikes", "D. UPS"],
+    "correctAnswer": "D. UPS (uninterruptible power supply)",
+    "explanation": "UPS protects system, doesn't cause malfunction.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Let KPRIV-A and KPUB-A be keys for Awgichew, KPRIV-M and KPUB-M for Meron. Awgichew sends secured message to Meron using asymmetric keys. Which not correct?",
+    "options": [
+      "A. Awgichew uses Meron's private key KPRIV-M to encrypt",
+      "B. Awgichew uses his KPUB-A to encrypt",
+      "C. Meron decodes using her KPRIV-M",
+      "D. Meron decodes using her KPUB-M"
+    ],
+    "correctAnswer": "B. Awgichew uses his KPUB-A to encrypt his plain text",
+    "explanation": "Sender uses receiver's public key to encrypt, not own public key.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Which agent works by searching and matching rules defined by percept and stored internal state?",
+    "options": [
+      "A. Model-based reflex agent",
+      "B. Goal-based agent",
+      "C. Simple reflex agent",
+      "D. Utility based agent"
+    ],
+    "correctAnswer": "A. Model-based reflex agent",
+    "explanation": "Model-based agents use internal state and rules.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which symbol for single line comment in JavaScript?",
+    "options": ["A. <?", "B. <!", "C. //", "D. &&"],
+    "correctAnswer": "C. //",
+    "explanation": "// for single-line comments in JavaScript.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Correct about symmetric and asymmetric keys?",
+    "options": [
+      "A. Both authentication methods",
+      "B. Symmetric requires public/private key pair",
+      "C. Asymmetric requires public/private key pair",
+      "D. Both recovery methods"
+    ],
+    "correctAnswer": "C. Asymmetric key requires the sender and receiver to have a public and private key",
+    "explanation": "Asymmetric uses key pairs; symmetric uses shared secret.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "If test individual sub-systems, which testing phase?",
+    "options": ["A. Integration testing", "B. Unit testing"],
+    "correctAnswer": "B. Unit testing",
+    "explanation": "Unit testing tests individual components/subsystems.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "You want list of protocols, foreign/local addresses, port numbers, connection state. Which command?",
+    "options": ["A. traceroute", "B. ipconfig", "C. netstat", "D. nslookup"],
+    "correctAnswer": "C. netstat",
+    "explanation": "netstat shows network connections, ports, states.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Good hash function should map keys evenly over output range. This property is",
+    "options": ["A. Uniformity", "B. Determinism", "C. Continuity", "D. Data normalization"],
+    "correctAnswer": "A. Uniformity",
+    "explanation": "Uniform distribution minimizes collisions.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "In array implementation of binary heap, if node at index i, right child at?",
+    "options": ["A. 2*i + 1", "B. i/2", "C. (i+1)/2", "D. 2*i"],
+    "correctAnswer": "A. 2*i + 1",
+    "explanation": "Binary heap: left child = 2i, right child = 2i+1.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which false about sequential and binary search?",
+    "options": [
+      "A. Binary works on descending order data",
+      "B. They are not equal in memory efficiency",
+      "C. Sequential works on sorted and unsorted",
+      "D. Binary faster than sequential worst-case on sorted"
+    ],
+    "correctAnswer": "C. Sequential searching algorithm can work on sorted and unsorted list of data",
+    "explanation": "Sequential works on both, but statement is true. Actually all seem true. Closest false: binary requires sorted data.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Term refers to number of symbols composing string?",
+    "options": ["A. Length", "B. Symbols", "C. Alphabet"],
+    "correctAnswer": "A. Length",
+    "explanation": "Length of string is number of symbols.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Way of combining analogue/digital signals into one over shared medium?",
+    "options": ["A. Point-to-point", "B. Broadcasting", "C. Synchronization", "D. Multicasting"],
+    "correctAnswer": "D. Multicasting",
+    "explanation": "Multicasting sends to multiple destinations over shared medium.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Which generation languages used in AI and Expert systems?",
+    "options": [
+      "A. Fifth generation",
+      "B. Second generation",
+      "C. Fourth generation",
+      "D. Third generation"
+    ],
+    "correctAnswer": "A. Fifth generation languages",
+    "explanation": "Fifth-gen (Prolog, Lisp) for AI/expert systems.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which INPUT attribute defines characters displayed without scrolling?",
+    "options": ["A. SIZE", "B. MAXLENGTH", "C. VALUE", "D. TYPE"],
+    "correctAnswer": "B. MAXLENGTH",
+    "explanation": "maxlength limits input characters; size affects visible width.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which requirement characteristic: one and only one interpretation?",
+    "options": ["A. Correct", "B. Unambiguous", "C. Feasible", "D. Verifiable"],
+    "correctAnswer": "B. Unambiguous",
+    "explanation": "Unambiguous requirements have single interpretation.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which method divides browser into subwindows showing different HTML docs?",
+    "options": ["A. Using paragraphs", "B. Using frames", "C. Using images", "D. Using tables"],
+    "correctAnswer": "B. Using frames",
+    "explanation": "Frames create multiple subwindows.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which not correct when mapping ER diagrams to relational tables?",
+    "options": [
+      "A. Multi-valued attributes mapped to new tables",
+      "B. Foreign keys map relationships",
+      "C. Table names directly mapped from entity names",
+      "D. Composite attributes mapped as is"
+    ],
+    "correctAnswer": "C. Table names are directly mapped from entity names",
+    "explanation": "Table names may differ from entity names; direct mapping not required.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which data update allows item updated immediately in cache?",
+    "options": [
+      "A. In-Place Update",
+      "B. Immediate update",
+      "C. Shadow update",
+      "D. Deferred update"
+    ],
+    "correctAnswer": "B. Immediate update",
+    "explanation": "Immediate update writes to database immediately.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which mutual exclusion mechanism uses integer variable for turns?",
+    "options": [
+      "A. Lock variable",
+      "B. Disabling interrupts",
+      "C. Strict alteration",
+      "D. Race condition"
+    ],
+    "correctAnswer": "C. Strict alteration",
+    "explanation": "Strict alteration (turn variable) alternates access.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Languages L1={c,d}, L2={e,fgh}. Which not element of L2L1?",
+    "options": ["A. fghc", "B. ed", "C. fghe", "D. ec"],
+    "correctAnswer": "B. ed",
+    "explanation": "L2L1 concatenation: {ec, ed, fghc, fghd}. ed not possible as e from L2, d from L1? Actually d∈L1, e∈L2, so ed ∈ L2L1? Wait: L2L1 means L2 then L1: {e,fgh} then {c,d} = {ec, ed, fghc, fghd}. ed IS element. fghe not element (needs L1 after L2). Answer B is incorrect choice.",
+    "difficulty": "hard"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Given alphabet Σ={c,d}, language L={c^n d^m: n>0}. Which not element of L?",
+    "options": ["A. ccddd", "B. 0d", "C. cccdddd", "D. ccdd"],
+    "correctAnswer": "B. 0d",
+    "explanation": "String must start with c(s). 0d invalid (starts with 0 not in alphabet).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Uses knowledge of relational algebra operations to optimize query?",
+    "options": [
+      "A. Database approach",
+      "B. Heuristic approach",
+      "C. Deterministic approach",
+      "D. Hierarchical data model"
+    ],
+    "correctAnswer": "A. Database approach",
+    "explanation": "Query optimization uses relational algebra properties.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Correct ordering in language processing system?",
+    "options": [
+      "A. Source→Preprocessor→Assembler→Compiler→Linker/Loader→target",
+      "B. Source→Preprocessor→Linker/Loader→Compiler/Assembler→target",
+      "C. Source→Compiler→Assembler→Preprocessor→Linker/Loader→target",
+      "D. Source→Preprocessor→Compiler→Assembler→Linker/Loader→target"
+    ],
+    "correctAnswer": "D. Source program → Preprocessor → Compiler → Assembler → Linker/Loader → target machine code",
+    "explanation": "Standard sequence: preprocessing, compilation, assembly, linking.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Wrong coupling of problem and environment?",
+    "options": [
+      "A. Contingency→partially observable, non-deterministic",
+      "B. Multiple state→deterministic, partially observable",
+      "C. Exploration→partially observable, deterministic",
+      "D. Single state→fully observable, deterministic"
+    ],
+    "correctAnswer": "B. Multiple state problem deterministic, partially observable",
+    "explanation": "Multiple state problem typically non-deterministic.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which responsible for controlling flow of bits between memory and controllers without CPU intervention?",
+    "options": [
+      "A. Disk fragmenting",
+      "B. Memory manager",
+      "C. Device controller",
+      "D. Direct memory access"
+    ],
+    "correctAnswer": "D. Direct memory access (DMA)",
+    "explanation": "DMA transfers data without CPU.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Cryptographic program replaces alphabet with successor. Which describes program?",
+    "options": ["A. Transliteration", "B. Translation", "C. Transformation", "D. Substitution"],
+    "correctAnswer": "D. Substitution",
+    "explanation": "Substitution cipher replaces letters.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "\"Until message received, sending process blocked\" describes?",
+    "options": [
+      "A. Blocking receive",
+      "B. Non-block receive",
+      "C. Non-block sending",
+      "D. Blocking send"
+    ],
+    "correctAnswer": "D. Blocking send",
+    "explanation": "Sender blocks until message received in blocking send.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Which theory classifies combinatorial problems and measures computational resources?",
+    "options": [
+      "A. Computability theory",
+      "B. Set theory",
+      "C. Complexity theory",
+      "D. Automata theory"
+    ],
+    "correctAnswer": "C. Complexity theory",
+    "explanation": "Complexity theory measures resource requirements.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Correct first-order logic for \"There is someone standing at door and is tall\"?",
+    "options": [
+      "A. ∀x(StandingAt(x, door))",
+      "B. ∀x(StandingAt(x, door) ∧ tall(x))",
+      "C. ∃x(StandingAt(x, door) ∧ tall(x))",
+      "D. ∃x(StandingAt(x, door) > tall(x))"
+    ],
+    "correctAnswer": "C. ∃x(StandingAt(x, door) ∧ tall(x))",
+    "explanation": "∃ existential quantifier for \"there exists\", ∧ for \"and\".",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Component that decides which ready process runs first?",
+    "options": [
+      "A. Memory manager",
+      "B. Inter process communication",
+      "C. Disk manager",
+      "D. Scheduler"
+    ],
+    "correctAnswer": "D. Scheduler",
+    "explanation": "Scheduler selects process from ready queue.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Design very high level structure first, then work down to details. Which approach?",
+    "options": ["A. Bottom-up", "B. System design", "C. Top-down", "D. Hybrid"],
+    "correctAnswer": "C. Top-down",
+    "explanation": "Top-down starts with high-level design, refines details.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which false about Java Exceptions?",
+    "options": [
+      "A. Cannot create own exception by extending Exception",
+      "B. Exception class describes errors by program/external",
+      "C. RuntimeException describes programming errors",
+      "D. All Java exception classes inherit from Throwable"
+    ],
+    "correctAnswer": "A. We cannot create our own exception classes by extending Exception class",
+    "explanation": "We can create custom exceptions by extending Exception.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which false about style sheets?",
+    "options": [
+      "A. Increase accessibility",
+      "B. Create consistent appearance",
+      "C. Easy to maintain HTML",
+      "D. Do not reduce web page file size"
+    ],
+    "correctAnswer": "D. Style sheets do not reduce web page file size",
+    "explanation": "CSS reduces file size by separating style from HTML.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which not correct about logic design?",
+    "options": [
+      "A. Considers particular DBMS",
+      "B. Normalization in logical phase",
+      "C. Based on specific data model",
+      "D. Independent from physical considerations"
+    ],
+    "correctAnswer": "D. It is independent from physical considerations",
+    "explanation": "Logical design considers physical aspects to some degree.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which is attack detection mechanism?",
+    "options": ["A. Physical control", "B. Audit log", "C. Password", "D. Encryption"],
+    "correctAnswer": "B. Audit log",
+    "explanation": "Audit logs detect suspicious activities.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which SQL command specifies constraints on tuples?",
+    "options": ["A. GRANT", "B. SELECT", "C. REVOKE", "D. CHECK"],
+    "correctAnswer": "D. CHECK",
+    "explanation": "CHECK constraint validates tuple values.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which data management approach allows apps to define/manage own data?",
+    "options": [
+      "A. Manual approach",
+      "B. Database approach",
+      "C. Hierarchical approach",
+      "D. Traditional file based"
+    ],
+    "correctAnswer": "D. Traditional file based approach",
+    "explanation": "File-based systems let apps manage their own files.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "What is the output of the following C++ fragment code? int p, q, n; p = q = n = 8; p += n; p /= q; cout << p;",
+    "options": ["A. 16", "B. 2", "C. 24", "D. 1"],
+    "correctAnswer": "B. 2",
+    "explanation": "p=q=n=8; p+=n → p=16; p/=q → p=16/8=2. Output is 2.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which database constraints are specified in the data definition language?",
+    "options": [
+      "A. Implicit or inherent model based constraints",
+      "B. Semantic constraints",
+      "C. Application based constraints",
+      "D. Schema based constraints"
+    ],
+    "correctAnswer": "D. Schema based constraints",
+    "explanation": "DDL specifies schema-based constraints (primary key, foreign key, etc.).",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which is a communication pathway connecting transmitting signals in binary digits between devices?",
+    "options": ["A. Memory", "B. Register", "C. CPU", "D. Bus"],
+    "correctAnswer": "D. Bus",
+    "explanation": "Bus transmits data between components.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which sorting algorithm requires large memory space?",
+    "options": ["A. Insertion sort", "B. Selection sort", "C. Merge sort", "D. Quick sort"],
+    "correctAnswer": "C. Merge sort",
+    "explanation": "Merge sort requires O(n) auxiliary space.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "In which phase of two phase locking can transaction obtain locks?",
+    "options": ["A. Release phase", "B. Roll back phase", "C. Shrinking phase", "D. Growing phase"],
+    "correctAnswer": "D. Growing phase",
+    "explanation": "In 2PL, locks acquired in growing phase, released in shrinking phase.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which one is not task of lexical analyzer?",
+    "options": ["A. Removing comments", "B. Generating tokens", "C. Error recovery", "D. Parsing"],
+    "correctAnswer": "D. Parsing",
+    "explanation": "Parsing is syntax analyzer's task.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which best describes program that seems friendly but contains hidden malicious code?",
+    "options": ["A. Trojan", "B. Malware", "C. Virus", "D. Worm"],
+    "correctAnswer": "A. Trojan",
+    "explanation": "Trojan horse appears legitimate but contains malicious code.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Look at fragment code: int a=6; int b=5; while(a>b) { cout<<\"computer science program\"<<endl; } Which algorithm property not satisfied?",
+    "options": ["A. Sequential", "B. Feasibility", "C. Finiteness", "D. Definiteness"],
+    "correctAnswer": "C. Finiteness",
+    "explanation": "Infinite loop (6>5 always true), violates finiteness property.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which is responsible for translating domain name to IP address?",
+    "options": ["A. DNS", "B. SMTP", "C. FTP", "D. DHCP"],
+    "correctAnswer": "A. DNS",
+    "explanation": "Domain Name System translates names to IP addresses.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which program puts together executable object files into memory for execution?",
+    "options": ["A. Loader", "B. Linker", "C. Compiler", "D. Assembler"],
+    "correctAnswer": "A. Loader",
+    "explanation": "Loader loads executable into memory for execution.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Machine language is grouped under which generation?",
+    "options": ["A. 2nd generation", "B. 3rd generation", "C. 4th generation", "D. 1st generation"],
+    "correctAnswer": "D. 1st generation",
+    "explanation": "1GL is machine language (binary).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which is not problem if concurrency not controlled?",
+    "options": ["A. Lost update", "B. Consistent database", "C. Incorrect summary", "D. Dirty read"],
+    "correctAnswer": "B. Consistent database",
+    "explanation": "Concurrency problems cause inconsistency, not consistency.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which false about parser role?",
+    "options": [
+      "A. Builds parse tree",
+      "B. Attempts to correct errors",
+      "C. Cannot perform context-free syntax analysis",
+      "D. Produces error messages"
+    ],
+    "correctAnswer": "C. Cannot perform context-free syntax analysis",
+    "explanation": "Parser performs context-free syntax analysis.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Malicious program collecting keystrokes including passwords is:",
+    "options": ["A. Rootkit", "B. Worms", "C. Key logger", "D. Trojan"],
+    "correctAnswer": "C. Key logger",
+    "explanation": "Keylogger records keystrokes secretly.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which memory needs periodic refresh to maintain data?",
+    "options": ["A. Static RAM", "B. Dynamic RAM", "C. Disk", "D. Tape"],
+    "correctAnswer": "B. Dynamic RAM",
+    "explanation": "DRAM needs refresh due to capacitor leakage.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Which not correct about rational agents?",
+    "options": [
+      "A. Rational agent knows result but unrealistic",
+      "B. Rational agent takes action not 100% sure",
+      "C. Rational agent acts for utmost success",
+      "D. Omniscience agent takes actions 100% sure"
+    ],
+    "correctAnswer": "D. Omniscience agent takes actions 100% sure",
+    "explanation": "Omniscient knows outcome, but not necessarily 100% success guarantee.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "What should compilers do to evaluate expressions?",
+    "options": [
+      "A. Convert infix to postfix",
+      "B. Convert postfix to prefix",
+      "C. Evaluate infix to prefix",
+      "D. Convert postfix to infix"
+    ],
+    "correctAnswer": "A. Convert infix to postfix",
+    "explanation": "Compilers often convert infix to postfix for easier evaluation.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Which finds shortest path based on cost?",
+    "options": ["A. Depth first search", "B. Iterative deepening", "C. Uniform cost search", "D. Breadth first search"],
+    "correctAnswer": "C. Uniform cost search",
+    "explanation": "UCS finds least-cost path.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which not correct about magnetic disk?",
+    "options": [
+      "A. Minimum block is sector",
+      "B. Head stationary during read/write",
+      "C. Data organized in tracks",
+      "D. Needs continuous power to keep bit contents"
+    ],
+    "correctAnswer": "B. Head stationary during read/write",
+    "explanation": "Disk heads move to track location; they're not stationary.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not correct about networking models?",
+    "options": [
+      "A. TCP/IP is protocol model",
+      "B. Reference model has no implementation spec",
+      "C. Designer can use TCP/IP or OSI or both",
+      "D. OSI is protocol model"
+    ],
+    "correctAnswer": "D. OSI is protocol model",
+    "explanation": "OSI is reference model, not protocol model.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "What will be output of Math.abs(-9) in JavaScript?",
+    "options": ["A. 9", "B. -9", "C. 1", "D. 0"],
+    "correctAnswer": "A. 9",
+    "explanation": "Math.abs returns absolute value.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not correct about IPv4?",
+    "options": ["A. Uses 128-bits", "B. Has address shortage", "C. Slow routing and memory intensive", "D. Uses 32-bits"],
+    "correctAnswer": "A. Uses 128-bits",
+    "explanation": "IPv4 uses 32 bits; IPv6 uses 128 bits.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which true about document.bgcolor in JavaScript?",
+    "options": ["A. bgcolor is method", "B. document is property", "C. bgcolor is property", "D. document is method"],
+    "correctAnswer": "C. bgcolor is property",
+    "explanation": "bgcolor is a property of document object (deprecated).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which not example of divide and conquer?",
+    "options": ["A. Quick sort", "B. Binary search", "C. Merge sort", "D. Heap sort"],
+    "correctAnswer": "D. Heap sort",
+    "explanation": "Heap sort uses heap data structure, not divide and conquer.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which data structure most appropriate for sharing printer in network?",
+    "options": ["A. Stack", "B. Binary search tree", "C. Full binary tree", "D. Queue"],
+    "correctAnswer": "D. Queue",
+    "explanation": "Printer sharing uses FIFO queue for fairness.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "For rectangle object, what do getArea, getPerimeter represent?",
+    "options": ["A. Attribute", "B. Property", "C. Data field", "D. Behavior"],
+    "correctAnswer": "D. Behavior",
+    "explanation": "Methods (getArea, getPerimeter) represent behavior/operations.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which false about abstract classes/methods?",
+    "options": [
+      "A. Can create instances using new operator",
+      "B. Implementation provided by subclasses",
+      "C. Class with abstract methods must be abstract",
+      "D. Abstract methods defined without implementation"
+    ],
+    "correctAnswer": "A. Can create instances using new operator",
+    "explanation": "Cannot instantiate abstract classes.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "PHP: $list = array(\"outside\"=>\"red\", \"inside\"=>\"brown\", \"top\"=>\"black\", \"under\"=>\"blue\"); What is index of \"black\"?",
+    "options": ["A. Brown", "B. Outside", "C. Under", "D. Top"],
+    "correctAnswer": "D. Top",
+    "explanation": "\"black\" has associative key \"top\".",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which operator creates array in Java?",
+    "options": ["A. new", "B. declare", "C. static", "D. construct"],
+    "correctAnswer": "A. new",
+    "explanation": "new operator creates array objects.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not transmission impairment?",
+    "options": ["A. Synchronization", "B. Crosstalk", "C. Impulse", "D. Distortion"],
+    "correctAnswer": "A. Synchronization",
+    "explanation": "Synchronization is technique, not impairment.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which false about client-side scripting?",
+    "options": [
+      "A. Script languages not full-featured",
+      "B. Script languages access client's hardware",
+      "C. Script languages limited capabilities",
+      "D. Script languages embedded as plain text"
+    ],
+    "correctAnswer": "B. Script languages access client's hardware",
+    "explanation": "Client-side scripts have limited hardware access for security.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which true about queue?",
+    "options": ["A. Applies first come first served", "B. Uses last in first out rule"],
+    "correctAnswer": "A. Applies first come first served",
+    "explanation": "Queue is FIFO.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not correct about IP address and DHCP?",
+    "options": [
+      "A. IP leased by DHCP is permanent",
+      "B. DHCP assures connectivity when users move",
+      "C. IP chosen from predetermined range",
+      "D. DHCP allows automatic IP acquisition"
+    ],
+    "correctAnswer": "A. IP leased by DHCP is permanent",
+    "explanation": "DHCP leases are temporary, not permanent.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which not condition for two operations to conflict?",
+    "options": [
+      "A. Access same item X",
+      "B. Belong to same transaction",
+      "C. Write_item(X) at least one operation",
+      "D. Belong to different transactions"
+    ],
+    "correctAnswer": "B. Belong to same transaction",
+    "explanation": "Conflicting operations must belong to different transactions.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "In case shutdown during transaction before commit, what done automatically?",
+    "options": ["A. View", "B. Commit", "C. Rollback", "D. Flashback"],
+    "correctAnswer": "C. Rollback",
+    "explanation": "Uncommitted transactions rolled back on failure.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which command not used for removing relation from SQL?",
+    "options": ["A. Delete", "B. Drop", "C. Remove", "D. UPDATE"],
+    "correctAnswer": "D. UPDATE",
+    "explanation": "UPDATE modifies, doesn't remove table.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "System in ___ state if every transaction waiting for another in set.",
+    "options": ["A. Idle", "B. Waiting", "C. Deadlock", "D. Ready"],
+    "correctAnswer": "C. Deadlock",
+    "explanation": "Circular waiting causes deadlock.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "What is Functional Requirement?",
+    "options": [
+      "A. Specifies tasks program must complete",
+      "B. Specifies tasks program should not complete",
+      "C. Specifies tasks program must not work",
+      "D. All of the mentioned"
+    ],
+    "correctAnswer": "A. Specifies tasks program must complete",
+    "explanation": "Functional requirements define what system should do.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which SDLC model if team has less experience?",
+    "options": ["A. Iterative Enhancement", "B. RAD", "C. Spiral", "D. Waterfall"],
+    "correctAnswer": "D. Waterfall",
+    "explanation": "Waterfall is simpler for inexperienced teams.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "In which step of SDLC actual programming done?",
+    "options": ["A. Development and Documentation", "B. Maintenance and Evaluation", "C. Design", "D. Analysis"],
+    "correctAnswer": "A. Development and Documentation",
+    "explanation": "Development phase involves coding.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Software Debugging is known as",
+    "options": [
+      "A. Identifying task to be computerized",
+      "B. Creating program code",
+      "C. Creating algorithm",
+      "D. Finding and correcting errors"
+    ],
+    "correctAnswer": "D. Finding and correcting errors",
+    "explanation": "Debugging = error detection and correction.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Probabilistic algorithm where packet sent to any neighbor randomly?",
+    "options": ["A. Adaptive routing", "B. Flooding", "C. Random walks", "D. Distributed routing"],
+    "correctAnswer": "C. Random walks",
+    "explanation": "Random walk sends to random neighbor.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which NAT protocol uses port number for address resolution?",
+    "options": ["A. Network Address Translation", "B. Port Address Translation"],
+    "correctAnswer": "B. Port Address Translation",
+    "explanation": "PAT uses port numbers to map multiple private IPs.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which responsible for converting higher level protocol addresses to physical addresses?",
+    "options": ["A. ARP", "B. RARP", "C. BOOTP", "D. ICMP"],
+    "correctAnswer": "A. ARP",
+    "explanation": "ARP maps IP to MAC address.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Given network 172.16.0.0/19, which correct?",
+    "options": [
+      "A. 8 subnets, 32 IP each",
+      "B. 8 subnets, 8190 hosts each",
+      "C. 8 subnets, 30 hosts each",
+      "D. 8 subnets, 2046 IP each"
+    ],
+    "correctAnswer": "A. 8 subnets, 32 IP each",
+    "explanation": "/19 subnet: interpretation depends on context; option A as given.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Network device providing physical interface between computer and cabling?",
+    "options": ["A. Switch", "B. Router", "C. NIC", "D. Repeater"],
+    "correctAnswer": "C. NIC",
+    "explanation": "Network Interface Card provides physical connection.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not function of DHCP server?",
+    "options": [
+      "A. Grants IP when receives client request",
+      "B. Maintains client configuration parameters",
+      "C. Maintains database of available IPs",
+      "D. Grants IP when sender request from client"
+    ],
+    "correctAnswer": "D. Grants IP when sender request from client",
+    "explanation": "DHCP responds to client requests, not \"sender\" requests.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which not true about kernel?",
+    "options": [
+      "A. Kernel is central core of OS",
+      "B. First part loaded during booting",
+      "C. Modules cannot be loaded in running OS",
+      "D. Remains in memory entire session"
+    ],
+    "correctAnswer": "C. Modules cannot be loaded in running OS",
+    "explanation": "Kernel modules can be loaded/unloaded dynamically.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which circuit requires memory to store output state?",
+    "options": ["A. Combinational circuit", "B. Sequential circuits", "C. Logical circuit", "D. Physical circuit"],
+    "correctAnswer": "B. Sequential circuits",
+    "explanation": "Sequential circuits have memory (state).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which describes lexical syntax?",
+    "options": ["A. Lexical Grammar", "B. Context-free Grammar", "C. Syntactic Grammar", "D. Regular Grammar"],
+    "correctAnswer": "D. Regular Grammar",
+    "explanation": "Lexical syntax described by regular grammars.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "What is not Functional Requirement?",
+    "options": [
+      "A. Specifies tasks program must complete",
+      "B. Specifies tasks program should not complete",
+      "C. Specifies tasks program must not work",
+      "D. Doesn't specify tasks program must not work"
+    ],
+    "correctAnswer": "D. Doesn't specify tasks program must not work",
+    "explanation": "Poorly worded; functional requirements specify what system should do.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Understanding software limitations, learning problems, identifying impact on organization is?",
+    "options": ["A. Software Design", "B. Feasibility Study", "C. Requirement Gathering", "D. System Analysis"],
+    "correctAnswer": "B. Feasibility Study",
+    "explanation": "Feasibility study assesses viability and impact.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "How does AI contribute to gaining insight into human intelligence?",
+    "options": [
+      "A. By replicating human cognitive exactly",
+      "B. By relying on predetermined rules",
+      "C. By analyzing large datasets for patterns",
+      "D. By disregarding human cognition"
+    ],
+    "correctAnswer": "C. By analyzing large datasets for patterns",
+    "explanation": "AI analyzes data to understand human intelligence patterns.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "If problem broken into subproblems reused several times, possesses ___ property.",
+    "options": ["A. Memoization", "B. Optimal substructure", "C. Greedy", "D. Overlapping sub-problems"],
+    "correctAnswer": "D. Overlapping sub-problems",
+    "explanation": "Overlapping subproblems property of dynamic programming.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "In KR, how represent \"how to drive a car\"?",
+    "options": ["A. Declarative knowledge", "B. Transition knowledge", "C. Procedural knowledge", "D. Information Knowledge"],
+    "correctAnswer": "C. Procedural knowledge",
+    "explanation": "\"How-to\" knowledge is procedural.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Advanced Databse",
+    "questionText": "Difference between OLTP and OLAP?",
+    "options": [
+      "A. OLTP stores historical, OLAP real-time",
+      "B. OLTP read-heavy, OLAP write-heavy",
+      "C. OLTP for transaction processing, OLAP for analytical",
+      "D. OLTP for analytical, OLAP for transaction"
+    ],
+    "correctAnswer": "C. OLTP for transaction processing, OLAP for analytical",
+    "explanation": "OLTP handles transactions, OLAP handles analysis.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which ACID property ensures transaction either completes fully or has no effect?",
+    "options": ["A. Atomicity", "B. Durability", "C. Consistency", "D. Isolation"],
+    "correctAnswer": "A. Atomicity",
+    "explanation": "Atomicity = all or nothing.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Postfix expression for (2+3)*(4+5)?",
+    "options": ["A. 2+34*+", "B. 23+45+*", "C. 234*+5+", "D. 2+3*4+5"],
+    "correctAnswer": "B. 23+45+*",
+    "explanation": "Infix (2+3)*(4+5) → postfix: 2 3 + 4 5 + *",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Primary objective of reinforcement learning?",
+    "options": [
+      "A. Mimic human decision-making",
+      "B. Categorize data into classes",
+      "C. Identify patterns",
+      "D. Maximize cumulative reward"
+    ],
+    "correctAnswer": "D. Maximize cumulative reward",
+    "explanation": "RL maximizes reward via actions in environment.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "If optimal solution from optimal subproblems, possesses ___ property.",
+    "options": ["A. Greedy", "B. Optimal substructure", "C. Memoization", "D. Overlapping subproblems"],
+    "correctAnswer": "B. Optimal substructure",
+    "explanation": "Optimal substructure: optimal solution contains optimal subproblem solutions.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which not main advantage of multiprogramming?",
+    "options": [
+      "A. Copying programs/data without accounting",
+      "B. CPU switches programs for interactive use",
+      "C. Increases CPU utilization",
+      "D. Efficient CPU-I/O overlap"
+    ],
+    "correctAnswer": "A. Copying programs/data without accounting",
+    "explanation": "This is misuse, not advantage.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which not method of expressing algorithms?",
+    "options": ["A. Natural language", "B. Programming language", "C. Pseudo-code", "D. Flowchart"],
+    "correctAnswer": "B. Programming language",
+    "explanation": "Programming language is implementation, not expression method.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "In healthcare database, crucial for patient privacy?",
+    "options": ["A. Data Warehousing", "B. Data Mining", "C. Data Encryption", "D. Data Replication"],
+    "correctAnswer": "C. Data Encryption",
+    "explanation": "Encryption protects sensitive patient data.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "What is foreign key?",
+    "options": [
+      "A. Field referring to primary key in another table",
+      "B. Key for accessing external data",
+      "C. Key for indexing primary keys",
+      "D. Key for encryption"
+    ],
+    "correctAnswer": "A. Field referring to primary key in another table",
+    "explanation": "Foreign key establishes relationship between tables.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Which paradigm emphasizes breaking problems into reusable functions?",
+    "options": ["A. Procedural programming", "B. Imperative programming", "C. Object-oriented programming", "D. Functional programming"],
+    "correctAnswer": "A. Procedural programming",
+    "explanation": "Procedural uses functions/procedures as basic units.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which is passive attack?",
+    "options": ["A. Masquerade", "B. DoS", "C. Traffic analysis", "D. Reply"],
+    "correctAnswer": "C. Traffic analysis",
+    "explanation": "Passive attack monitors without altering.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which not step in merge sort?",
+    "options": ["A. Combine", "B. Conquer", "C. Divide", "D. Analyze"],
+    "correctAnswer": "D. Analyze",
+    "explanation": "Merge sort: Divide, Conquer, Combine.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "What does \"algorithm\" refer to?",
+    "options": [
+      "A. Set of rules for solving problem",
+      "B. Variable holding data",
+      "C. Function performing task",
+      "D. Programming syntax"
+    ],
+    "correctAnswer": "A. Set of rules for solving problem",
+    "explanation": "Algorithm is step-by-step problem-solving procedure.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which objective involves protecting from unauthorized access?",
+    "options": ["A. Enhancing performance", "B. Ensuring security", "C. Maximizing hardware use", "D. User-friendly interface"],
+    "correctAnswer": "B. Ensuring security",
+    "explanation": "Security objective protects system.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which correct about RISC computers?",
+    "options": [
+      "A. Few registers vs CISC",
+      "B. Extensive addressing capabilities",
+      "C. Complex efficient instructions",
+      "D. Hardwired control with pipelining"
+    ],
+    "correctAnswer": "D. Hardwired control with pipelining",
+    "explanation": "RISC uses hardwired control and pipelining.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Advanced Databse",
+    "questionText": "Which not characteristic of NoSQL?",
+    "options": ["A. Flexible data models", "B. High availability", "C. Scalability", "D. Strict schema enforcement"],
+    "correctAnswer": "D. Strict schema enforcement",
+    "explanation": "NoSQL is schema-less or flexible schema.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Grammar where all attributes synthesized, no inherited attributes?",
+    "options": ["A. M-attributed grammar", "B. L-attributed grammar", "C. Attributed grammar", "D. S-attributed grammar"],
+    "correctAnswer": "D. S-attributed grammar",
+    "explanation": "S-attributed grammars have only synthesized attributes.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Minimum number of stacks required by FSA?",
+    "options": ["A. 1", "B. 2", "C. 3", "D. 0"],
+    "correctAnswer": "D. 0",
+    "explanation": "Finite State Automata don't use stacks.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Purpose of switch statement in C++?",
+    "options": [
+      "A. Declare functions",
+      "B. Select one code block to execute",
+      "C. Execute block repeatedly",
+      "D. Define loop until false"
+    ],
+    "correctAnswer": "B. Select one code block to execute",
+    "explanation": "Switch selects based on expression value.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Which is Uninformed (Blind) Search?",
+    "options": ["A. Breadth-first search", "B. Hill climbing", "C. Heuristic Functions", "D. Greedy search"],
+    "correctAnswer": "A. Breadth-first search",
+    "explanation": "BFS doesn't use domain knowledge.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which measures how strongly elements within module related?",
+    "options": ["A. Cohesion", "B. Aggregation", "C. Inheritance", "D. Coupling"],
+    "correctAnswer": "A. Cohesion",
+    "explanation": "Cohesion measures internal relatedness.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Term for collection of information stored at particular moment?",
+    "options": ["A. Foreign key", "B. An instance", "C. Primary key", "D. Schema"],
+    "correctAnswer": "B. An instance",
+    "explanation": "Database instance = current data state.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Which allows deleting from front, inserting at rear?",
+    "options": ["A. Binary search tree", "B. Deques", "C. Stacks", "D. Queues"],
+    "correctAnswer": "D. Queues",
+    "explanation": "Queue: FIFO, delete front, insert rear.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which command tests reachability of hosts?",
+    "options": ["A. Netstat", "B. Ping", "C. Traceroute", "D. Tcpdump"],
+    "correctAnswer": "B. Ping",
+    "explanation": "Ping tests host reachability via ICMP.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which true statement?",
+    "options": [
+      "A. Low cohesion, high coupling = functionally independent",
+      "B. Functionally dependent module has minimal interaction",
+      "C. High cohesion, low coupling = functionally dependent",
+      "D. Cohesion measures functional strength"
+    ],
+    "correctAnswer": "D. Cohesion measures functional strength",
+    "explanation": "Cohesion measures how well module's parts belong together.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which class of grammar used for syntax analysis?",
+    "options": ["A. Context free grammars", "B. Regular grammars", "C. Non-recursive grammars", "D. Recursive grammars"],
+    "correctAnswer": "A. Context free grammars",
+    "explanation": "CFGs used for syntax analysis.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Brute-force attacks used against which access control?",
+    "options": ["A. Biometrics and smart cards", "B. Passwords and Smart Cards", "C. Passwords and PIN", "D. Biometrics and Passwords"],
+    "correctAnswer": "C. Passwords and PIN",
+    "explanation": "Brute-force guesses passwords/PINs.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which describes static structure of system?",
+    "options": ["A. Sequence diagram", "B. Use case diagram", "C. Activity diagram", "D. Class diagram"],
+    "correctAnswer": "D. Class diagram",
+    "explanation": "Class diagram shows static structure.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which scheduling ensures equal CPU share?",
+    "options": ["A. Round Robin", "B. FCFS", "C. SJN", "D. Priority"],
+    "correctAnswer": "A. Round Robin",
+    "explanation": "RR gives equal time slices.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Data structure required for breadth first traversal?",
+    "options": ["A. Stack", "B. Tree", "C. Queue", "D. Array"],
+    "correctAnswer": "C. Queue",
+    "explanation": "BFS uses queue.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "In PHP, which function initiates session?",
+    "options": ["A. s_start()", "B. session_start()", "C. start()", "D. session_str()"],
+    "correctAnswer": "B. session_start()",
+    "explanation": "session_start() starts a new session.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Where cannot place JavaScript code?",
+    "options": ["A. In any tag as attribute", "B. In <body> tag", "C. In external files", "D. In <head> tag"],
+    "correctAnswer": "A. In any tag as attribute",
+    "explanation": "JS must be in <script> tags or external files.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which not component of computer system?",
+    "options": ["A. Data unit", "B. Input unit", "C. Control unit", "D. Storage unit"],
+    "correctAnswer": "A. Data unit",
+    "explanation": "Standard components: input, output, memory, ALU, control.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Absolute value of highest signal intensity proportional to energy?",
+    "options": ["A. Period", "B. Frequency Attenuation", "C. Peak-amplitude"],
+    "correctAnswer": "C. Peak-amplitude",
+    "explanation": "Peak amplitude measures signal strength.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "What is encapsulation?",
+    "options": ["A. Inheritance", "B. Composition", "C. Data hiding and abstraction", "D. Polymorphism"],
+    "correctAnswer": "C. Data hiding and abstraction",
+    "explanation": "Encapsulation bundles data with methods, hiding details.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Which correct statement?",
+    "options": [
+      "A. Turing machine least powerful",
+      "B. PDA and FSA same power",
+      "C. Regular expression more powerful than FSA",
+      "D. DFA and NFA equivalent"
+    ],
+    "correctAnswer": "D. DFA and NFA equivalent",
+    "explanation": "DFA and NFA recognize same class (regular languages).",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which true statement?",
+    "options": [
+      "A. OSI transport layer connection-oriented and connectionless",
+      "B. TCP/IP transport only connection-oriented",
+      "C. TCP/IP has 7 layers, OSI 4",
+      "D. OSI clear distinction services/interfaces/protocols"
+    ],
+    "correctAnswer": "A. OSI transport layer connection-oriented and connectionless",
+    "explanation": "OSI transport supports both modes.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "How does AI contribute to study of human behavior?",
+    "options": [
+      "A. Disregarding human behavior",
+      "B. Relying on philosophical theories",
+      "C. Insights through analyzing behavioral data",
+      "D. Limiting to deterministic algorithms"
+    ],
+    "correctAnswer": "C. Insights through analyzing behavioral data",
+    "explanation": "AI analyzes behavioral data for insights.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Which backup strategy backs up only modified files?",
+    "options": ["A. Full backup", "B. Partial backup", "C. Full dump", "D. Incremental backup"],
+    "correctAnswer": "D. Incremental backup",
+    "explanation": "Incremental backs up only changed files since last backup.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which not Software Characteristic?",
+    "options": [
+      "A. Maintenance without spare parts",
+      "B. Software is complex",
+      "C. Software is manufactured",
+      "D. Software is intangible"
+    ],
+    "correctAnswer": "A. Maintenance without spare parts",
+    "explanation": "Software doesn't have physical spare parts.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which action in bottom-up parsing moves terminals to stack?",
+    "options": ["A. Accept", "B. Shift", "C. Augment", "D. Reduce"],
+    "correctAnswer": "B. Shift",
+    "explanation": "Shift moves input symbol onto stack.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Process of arranging elements in logical order?",
+    "options": ["A. Insertion", "B. Traversing", "C. Merging", "D. Sorting"],
+    "correctAnswer": "D. Sorting",
+    "explanation": "Sorting arranges elements in order.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "What would be the output of JavaScript: x=4+\"4\"; document.write(x);",
+    "options": ["A. 4", "B. 8", "C. 44", "D. The code contains an error"],
+    "correctAnswer": "C. 44",
+    "explanation": "String concatenation: number + string = string \"44\".",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "When input accepted by Turing Machine?",
+    "options": [
+      "A. If machine halts in final state",
+      "B. If machine enters infinite loop",
+      "C. If reaches any state with no possible move",
+      "D. If consumes all input in one state"
+    ],
+    "correctAnswer": "A. If machine halts in final state",
+    "explanation": "Input accepted when TM halts in a final state.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Regular expression for strings starting with ab and ending with bba over {a,b}?",
+    "options": ["A. ab(ab)bba", "B. ababbba", "C. ab(a+b)bba", "D. ab(a+b)bba"],
+    "correctAnswer": "C. ab(a+b)bba",
+    "explanation": "ab followed by any string from (a|b)*, ending with bba.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which false about HTTP protocol?",
+    "options": [
+      "A. HTTP message body can be empty",
+      "B. Used for browser-server communication",
+      "C. Stateless protocol",
+      "D. HTTP message has specified minimum size"
+    ],
+    "correctAnswer": "D. HTTP message has specified minimum size",
+    "explanation": "HTTP has no minimum message size.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which condition refers to circular chain of waiting processes?",
+    "options": ["A. Hold and wait", "B. No preemption", "C. Mutual exclusion", "D. Circular wait"],
+    "correctAnswer": "D. Circular wait",
+    "explanation": "Circular wait is one of the deadlock conditions.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "What does DOM stand for?",
+    "options": ["A. Document Oriented Management", "B. Document OnLoad Model", "C. Document Object Model", "D. Document Oriented Model"],
+    "correctAnswer": "C. Document Object Model",
+    "explanation": "DOM is Document Object Model.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Select incorrect about database languages?",
+    "options": [
+      "A. DML retrieves information",
+      "B. DDL specifies database schema",
+      "C. DDL modifies stored information",
+      "D. DML accesses/manipulates data"
+    ],
+    "correctAnswer": "C. DDL modifies stored information",
+    "explanation": "DDL defines schema; DML modifies data.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Everything is a/an in HTML DOM?",
+    "options": ["A. Element", "B. Array", "C. Node", "D. Attribute"],
+    "correctAnswer": "C. Node",
+    "explanation": "In DOM, everything is a node.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Operation on register contents known as?",
+    "options": ["A. Instruction code", "B. Micro-operation", "C. Registration", "D. Accumulation"],
+    "correctAnswer": "B. Micro-operation",
+    "explanation": "Micro-operations are elementary operations on register contents.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Which not unique for every computer in network?",
+    "options": ["A. MAC address", "B. IPv4 address", "C. IPv6 address", "D. Subnet mask"],
+    "correctAnswer": "D. Subnet mask",
+    "explanation": "Subnet mask is same for all hosts in a subnet.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "In PHP, ___ are predefined variables accessible throughout script.",
+    "options": ["A. Predefined variables", "B. Reserved variables", "C. Superglobals", "D. Global variables"],
+    "correctAnswer": "C. Superglobals",
+    "explanation": "Superglobals (e.g. $_GET, $_POST) are available everywhere.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Structures and Algorithms",
+    "questionText": "Polynomial addition implemented using?",
+    "options": ["A. Stack", "B. Linked List", "C. Queue", "D. Trees"],
+    "correctAnswer": "B. Linked List",
+    "explanation": "Polynomial terms often represented as linked list nodes.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which access control service determines what subject can do?",
+    "options": ["A. Accountability", "B. Audit", "C. Authorization", "D. Authentication"],
+    "correctAnswer": "C. Authorization",
+    "explanation": "Authorization defines permissions.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Which not used to determine CPU state at end of execute cycle?",
+    "options": [
+      "A. Content of status conditions",
+      "B. Content of processor registers",
+      "C. Content of data bus",
+      "D. Content of program counter"
+    ],
+    "correctAnswer": "C. Content of data bus",
+    "explanation": "Data bus carries data; state determined by registers, PC, flags.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which best describes database?",
+    "options": [
+      "A. Data organized in specific structure",
+      "B. Collection of random data",
+      "C. Collection of related files",
+      "D. Collection of unrelated files"
+    ],
+    "correctAnswer": "A. Data organized in specific structure",
+    "explanation": "Database is structured collection of data.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Automata and Complexity Theory",
+    "questionText": "Which graph property represents number of derivation steps to generate string?",
+    "options": ["A. Degree of vertex", "B. Parent vertex", "C. Root of graph", "D. Path from root"],
+    "correctAnswer": "D. Path from root",
+    "explanation": "Path from root in parse tree corresponds to derivation.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Which function focuses on providing easy access to applications?",
+    "options": ["A. Device management", "B. File management", "C. Process management", "D. User interface management"],
+    "correctAnswer": "D. User interface management",
+    "explanation": "UI management provides user access to applications.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which SQL command retrieves data?",
+    "options": ["A. UPDATE", "B. INSERT", "C. SELECT", "D. DELETE"],
+    "correctAnswer": "C. SELECT",
+    "explanation": "SELECT retrieves data from tables.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which not attack on passwords?",
+    "options": ["A. Brute-force", "B. Trojan Login", "C. Logic Bomb", "D. Eavesdropping"],
+    "correctAnswer": "C. Logic Bomb",
+    "explanation": "Logic bomb is triggered by condition, not a password attack.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Introduction to Artificial Intelligence",
+    "questionText": "Example of Deduction Reasoning?",
+    "options": [
+      "A. Grass wet every time it rains → when rains, grass wet",
+      "B. When rains, grass wet. It rains → grass wet",
+      "C. When rains, grass wet. Grass wet → it rains",
+      "D. When rains, grass wet. Grass wet → must have rained"
+    ],
+    "correctAnswer": "B. When rains, grass wet. It rains → grass wet",
+    "explanation": "Deduction: from general rule and fact, conclude specific instance.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Command to change file permissions?",
+    "options": ["A. Permission", "B. Perm", "C. Modify", "D. Chmod"],
+    "correctAnswer": "D. Chmod",
+    "explanation": "chmod changes file permissions.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which not property of algorithm?",
+    "options": ["A. Finite", "B. Input/Output", "C. Correct", "D. Ambiguity"],
+    "correctAnswer": "D. Ambiguity",
+    "explanation": "Algorithms must be unambiguous.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Factors considered when planning software development?",
+    "options": [
+      "A. People, problem, productivity, performance",
+      "B. People, problem, product, portability",
+      "C. People, problem, product, process",
+      "D. Performance, problem, product, planning"
+    ],
+    "correctAnswer": "C. People, problem, product, process",
+    "explanation": "The four P's: People, Problem, Product, Process.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Term for blueprint for creating objects?",
+    "options": ["A. Method", "B. Class", "C. Instance", "D. Object"],
+    "correctAnswer": "B. Class",
+    "explanation": "Class is blueprint; objects are instances.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which OOP principle emphasizes separation into manageable parts?",
+    "options": ["A. Inheritance", "B. Modularity", "C. Abstraction", "D. Encapsulation"],
+    "correctAnswer": "B. Modularity",
+    "explanation": "Modularity divides system into manageable modules.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which data structure represents grammatical structure of source program?",
+    "options": ["A. Stack", "B. Queue", "C. Tree", "D. 2D-array"],
+    "correctAnswer": "C. Tree",
+    "explanation": "Parse tree represents grammatical structure.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Main advantage of references vs pointers in C++?",
+    "options": [
+      "A. Can be dynamically allocated",
+      "B. More memory-efficient",
+      "C. Cannot be null",
+      "D. Access arbitrary memory"
+    ],
+    "correctAnswer": "C. Cannot be null",
+    "explanation": "References must be bound to valid object; cannot be null.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Which class of running time functions best?",
+    "options": ["A. Exponential", "B. Logarithmic", "C. Linear", "D. Polynomial"],
+    "correctAnswer": "B. Logarithmic",
+    "explanation": "Logarithmic grows slowest among common classes.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "Which tag represents paragraphs?",
+    "options": ["A. <p>", "B. <ph>", "C. <par>", "D. <pg>"],
+    "correctAnswer": "A. <p>",
+    "explanation": "<p> is the paragraph tag in HTML.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Lowest level in computer architecture?",
+    "options": ["A. Hardware", "B. Machine language", "C. High-level language", "D. Assembly language"],
+    "correctAnswer": "A. Hardware",
+    "explanation": "Hardware is the lowest level.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Which correct statement?",
+    "options": [
+      "A. System threat exposes for possible attacks",
+      "B. System attack exposes for possible dangers",
+      "C. Vulnerability is flaw exploitable by attackers",
+      "D. System protection disconnects from communication"
+    ],
+    "correctAnswer": "C. Vulnerability is flaw exploitable by attackers",
+    "explanation": "Vulnerability is weakness that can be exploited.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Network and System Administration",
+    "questionText": "Which not principle of system administration?",
+    "options": ["A. Request-based", "B. Communication", "C. Automation", "D. Simplicity"],
+    "correctAnswer": "A. Request-based",
+    "explanation": "Proactive/automation preferred over purely request-based.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer organization and Architecture",
+    "questionText": "Name for built-in functions in assembly code?",
+    "options": ["A. Cache", "B. Func", "C. Mnemonics", "D. Register"],
+    "correctAnswer": "C. Mnemonics",
+    "explanation": "Assembly uses mnemonic opcodes.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Compiler Design",
+    "questionText": "Which correct about code optimization?",
+    "options": [
+      "A. Only before code generation",
+      "B. Only after code generation",
+      "C. Can be done on intermediate code",
+      "D. Cannot be done before generation"
+    ],
+    "correctAnswer": "C. Can be done on intermediate code",
+    "explanation": "Optimization can be applied to intermediate representation.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Purpose of loop?",
+    "options": [
+      "A. Declare variables",
+      "B. Create user interfaces",
+      "C. Define conditional statements",
+      "D. Execute code repeatedly"
+    ],
+    "correctAnswer": "D. Execute code repeatedly",
+    "explanation": "Loops repeat a block of code.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Programming",
+    "questionText": "Primary purpose of variable?",
+    "options": [
+      "A. Define functions",
+      "B. Store and manipulate data",
+      "C. Create GUIs",
+      "D. Execute conditional statements"
+    ],
+    "correctAnswer": "B. Store and manipulate data",
+    "explanation": "Variables hold data values.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Design and Analysis of Algorithms",
+    "questionText": "Data structure for Depth First Search?",
+    "options": ["A. Stack", "B. Linked List", "C. Queue", "D. Array"],
+    "correctAnswer": "A. Stack",
+    "explanation": "DFS uses stack (or recursion).",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Best cable for data transmission?",
+    "options": ["A. Coaxial", "B. Fiber Optic", "C. RJ-45", "D. Twisted pair"],
+    "correctAnswer": "B. Fiber Optic",
+    "explanation": "Fiber optic offers high bandwidth and low attenuation.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Data Communication and Computer Networking",
+    "questionText": "Rules governing data communication between computers?",
+    "options": ["A. Language", "B. Syntax", "C. Access methods", "D. Protocol"],
+    "correctAnswer": "D. Protocol",
+    "explanation": "Protocols define communication rules.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Advanced Databse",
+    "questionText": "Which replication offers highest consistency but higher latency?",
+    "options": ["A. Multi-master", "B. Asynchronous", "C. Synchronous", "D. Semi-synchronous"],
+    "correctAnswer": "C. Synchronous",
+    "explanation": "Synchronous replication waits for all replicas before commit.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Operating System",
+    "questionText": "Special-purpose program reading commands and executing programs?",
+    "options": ["A. Kernel", "B. Terminal", "C. Process", "D. Shell"],
+    "correctAnswer": "D. Shell",
+    "explanation": "Shell reads user commands and runs programs.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "Which SQL command deletes table?",
+    "options": ["A. REMOVE TABLE", "B. DROP TABLE", "C. ERASE TABLE", "D. DELETE TABLE"],
+    "correctAnswer": "B. DROP TABLE",
+    "explanation": "DROP TABLE removes table structure and data.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Software Engineering",
+    "questionText": "Which way to define scope of software project?",
+    "options": [
+      "A. Define deliverables, functionality, data, technical structure",
+      "B. Define error and functional dependence",
+      "C. Define non-deliverables and non-functionality",
+      "D. Complexity and risk"
+    ],
+    "correctAnswer": "A. Define deliverables, functionality, data, technical structure",
+    "explanation": "Scope defined by deliverables, functionality, data, technical structure.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Web programming",
+    "questionText": "What suitable for storing shopping cart items for revisit days later?",
+    "options": ["A. Cache", "B. Cookies", "C. Basket", "D. Session"],
+    "correctAnswer": "B. Cookies",
+    "explanation": "Cookies persist across sessions; sessions end when browser closes.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "Operation where letters change position but retain identity?",
+    "options": ["A. Transposition", "B. Substitution", "C. Block cipher", "D. Mono-alphabetic"],
+    "correctAnswer": "A. Transposition",
+    "explanation": "Transposition cipher reorders letters.",
+    "difficulty": "medium"
+  },
+  {
+    "subject": "Computer Security",
+    "questionText": "In asymmetric cryptography, message encrypted using?",
+    "options": ["A. Sender's public key", "B. Receiver's public key", "C. Receiver's private key", "D. Sender's private key"],
+    "correctAnswer": "B. Receiver's public key",
+    "explanation": "Sender encrypts with receiver's public key; only private key decrypts.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Fundamental Database Systems",
+    "questionText": "What does ACID stand for?",
+    "options": [
+      "A. Atomicity, Consistency, Integrity, Durability",
+      "B. All Columns Indexed and Defined",
+      "C. Automated Control of Inconsistent Data",
+      "D. Advanced Constraints for Improved Data"
+    ],
+    "correctAnswer": "A. Atomicity, Consistency, Integrity, Durability",
+    "explanation": "ACID: Atomicity, Consistency, Isolation (often listed as Integrity), Durability.",
+    "difficulty": "easy"
+  },
+  {
+    "subject": "Object Oriented Programming",
+    "questionText": "Which wrongly matched in OO?",
+    "options": [
+      "A. Method - action by object",
+      "B. Class - holds values of attributes",
+      "C. Object - person, place, thing",
+      "D. Attribute - description of objects"
+    ],
+    "correctAnswer": "B. Class - holds values of attributes",
+    "explanation": "Class is blueprint; object (instance) holds attribute values.",
+    "difficulty": "easy"
   }
 ]
 

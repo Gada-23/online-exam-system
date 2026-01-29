@@ -99,23 +99,18 @@ function validateQuestion(q) {
   try {
     await connectDB();
 
-    let created = 0;
-    let updated = 0;
+    const bulkOps = valid.map((q) => ({
+      updateOne: {
+        filter: { subject: q.subject, questionText: q.questionText },
+        update: { $set: q },
+        upsert: true,
+      },
+    }));
 
-    for (const q of valid) {
-      const filter = { subject: q.subject, questionText: q.questionText };
-      const update = { $set: q };
-      const existing = await Question.findOne(filter).select("_id");
+    const result = await Question.bulkWrite(bulkOps);
 
-      if (existing) {
-        await Question.updateOne(filter, update);
-        updated += 1;
-      } else {
-        await Question.create(q);
-        created += 1;
-      }
-    }
-
+    const created = result.upsertedCount || 0;
+    const updated = result.modifiedCount || 0;
     console.log(`Seed complete. Created: ${created}, Updated: ${updated}, Total input: ${valid.length}`);
     process.exit(0);
   } catch (err) {
